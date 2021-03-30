@@ -8,7 +8,7 @@ A simple resource to remove all ped and vehicles.
 
 1. Download the code from this repository.
 
-2. Extract the contents of the this repo into your server /resources/**nolocals**. If the /nolocals folder does not exists, then create it.
+2. Extract the contents of this repo into your server /resources/**nolocals**. If the /nolocals folder does not exists, then create it.
 
 You can also create the folder inside /resources/[local]/**nolocals**
 
