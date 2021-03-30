@@ -2,10 +2,11 @@ Citizen.CreateThread(
 	function()
 		while true do
 			Citizen.Wait(0)
+
 			local playerPed = GetPlayerPed(-1)
 			local playerId = PlayerId()
 
-			--[[ DISABLE VEHICLE GENERATROS IN PLAYER AREA - taken from the internet ]]
+			--[[ DISABLE VEHICLE GENERATORS IN PLAYER AREA ]]
 			local pos = GetEntityCoords(playerPed)
 			RemoveVehiclesFromGeneratorsInArea(
 				pos['x'] - 500.0,
@@ -16,11 +17,10 @@ Citizen.CreateThread(
 				pos['z'] + 500.0
 			)
 
-			--[[ POLICE DISPATCH SPAWNS OFF - taken from the internet ]]
+			--[[ POLICE DISPATCH SPAWNS OFF ]]
 			for i = 1, 12 do
 				EnableDispatchService(i, false)
 			end
-
 			SetPlayerWantedLevel(playerId, 0, false)
 			SetPlayerWantedLevelNow(playerId, false)
 			SetPlayerWantedLevelNoDrop(playerId, 0, false)
