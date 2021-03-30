@@ -1,4 +1,4 @@
-version '1.0.0'
+version '1.0.3'
 author 'Stratolark'
 description 'Disables All Peds and Vehicles from your FiveM Server'
 repository 'https://github.com/stratolark/nolocals'
